@@ -1,9 +1,9 @@
 package main
 
+//需要在环境变量下的src包下面做工程
 import (
-	"go_code/chapter09/demo01/utils"
-	// "go_code"
 	"fmt"
+	"go_code/chapter09/demo01/utils"
 )
 
 func main() {
