@@ -17,4 +17,12 @@ func main() {
 		fmt.Printf("i = %v, v = %v\n", i, v)
 	}
 
+	slice2 := slice[1:2]
+	fmt.Println(slice)
+	fmt.Println(slice2)
+	fmt.Println(arr) //2, 4, 6, 8, 20
+	slice2[0] = 10
+	fmt.Println(slice)
+	fmt.Println(slice2)
+	fmt.Println(arr) //2, 4, 10, 8, 20
 }
