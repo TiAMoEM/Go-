@@ -21,7 +21,7 @@ func main() {
 	fmt.Println("slice1 size =", len(slice1))
 	fmt.Println("slice1 cap =", cap(slice1))
 
-	//方式三：定义一个切片，直接就置顶具体数组
+	//方式三：定义一个切片，直接就指定具体数组
 	var strslice []string = []string{"tom", "jack", "mary"}
 	fmt.Println("strslice =", strslice)
 	fmt.Println("strslice size =", len(strslice))
