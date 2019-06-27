@@ -31,4 +31,18 @@ func main() {
 	//方式四
 	var p4 *Person = &Person{"John", 19}
 	fmt.Println(*p4)
+
+	var person1 Person
+	person1.Age = 18
+	person1.Name = "Ann"
+	var person2 *Person = &person1
+
+	fmt.Println(person2.Age)
+	fmt.Println((*person2).Age)
+
+	person2.Age = 20
+	fmt.Println(person2.Age)
+	fmt.Println((*person2).Age)
+	fmt.Println(person1.Age)
+
 }
