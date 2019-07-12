@@ -14,7 +14,7 @@ func main() {
 		return
 	}
 	defer file.Close()
-	str := "Hello World\n"
+	str := "Hello World\n\r"
 	writer := bufio.NewWriter(file)
 	for i := 0; i < 5; i++ {
 		writer.WriteString(str)
