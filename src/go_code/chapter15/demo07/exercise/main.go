@@ -13,6 +13,9 @@ func main() {
 		port int
 	)
 
+	//类似MySQL的登录语句
+	//终端输入go run main.go -u root -pwd root -h 192.168.0.1 -port 3306
+
 	flag.StringVar(&user, "u", "", "用户名，默认为空")
 	flag.StringVar(&pwd, "pwd", "", "密码，默认为空")
 	flag.StringVar(&host, "h", "localhost", "主机名，默认为localhost")
