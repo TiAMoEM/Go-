@@ -5,9 +5,11 @@ import (
 	"fmt"
 )
 
+//struct 指定tag标签
+
 type Monster struct {
-	Name     string
-	Age      int
+	Name     string `json:"monster_name"`
+	Age      int    `json:"monster_age"`
 	Birthday string
 	Sal      float64
 	Skill    string
