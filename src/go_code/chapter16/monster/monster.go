@@ -30,7 +30,7 @@ func (this *Monster) Store() bool {
 
 func (this *Monster) ReStore() bool {
 	filePath := "d:\\monster.txt"
-	err = ioutil.ReadFile(filePath)
+	data, err := ioutil.ReadFile(filePath)
 	if err != nil {
 		fmt.Println("ReadFile err=", err)
 		return false
