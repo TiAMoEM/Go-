@@ -77,7 +77,14 @@ func playGame(first *Boy, startNo int, countNum int) {
 			tail = tail.Next
 		}
 		fmt.Printf("小孩编号为 %d 出圈 \n", first.No)
+		first = first.Next
+		tail.Next = first
+		if tail == first {
+			break
+		}
 	}
+
+	fmt.Printf("小孩编号为 %d 出圈 \n", first.No)
 }
 
 func main() {
